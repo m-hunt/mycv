@@ -1,0 +1,153 @@
+html, body {
+
+/* don't need anything here when using grid I think */
+}
+
+html {
+
+ font-size: 100%;
+}
+
+body {
+    /*min-height: 100vh;*/
+		height: 100vh;
+			background-color: rgb(255, 255, 255);
+			min-height: 100%;
+			 font-size: 100%;
+}
+
+input:focus{
+    outline: none;
+}
+
+textarea:focus{
+    outline: none;
+}
+
+img {
+ /* max-width: 100%;
+  max-height: 100%;
+	height: 100%;*/
+	}
+	
+/*
+.flag_selected {	
+	border-bottom: 5px solid DarkGreen;
+  margin-bottom: -5px;
+	
+}
+*/
+.hidden {
+visibility: hidden;
+display: none;
+}
+
+.visible{
+	visibility: visible;
+}
+
+.grid_container{
+	background-color: rgb(255 153 0 / 10%);
+	display: grid;
+	height: 91vh;
+  max-width: 800px;
+	margin: auto;
+	padding: 10px 10px 10px 10px;
+	border-radius: 10px;
+	overflow: hidden;
+	grid-template-rows: repeat(24, 1fr);
+  grid-template-columns: repeat(10, 1fr);
+  gap: 5px;
+}
+
+.header_skills_cont{
+	background-color: rgb(255 217 155 / 31%);
+  display: grid;
+	grid-template-columns: repeat(18, 1fr);
+	grid-template-rows: repeat(40, 1fr);
+  overflow-y: auto;
+  grid-row: 1/25;
+  grid-column: 1/11;
+	}
+	
+.header_div{
+	display: grid;
+  background-color: #001597;
+  color: white;
+  font: 18px "Lucida Grande", "Lucida Sans Unicode", Arial, Helvetica, Verdana, sans-serif;
+  border-radius: 8px;
+  grid-row: 1/6;
+  grid-column: 1/19;
+  /* grid-template-columns: repeat(4, 5vw); */
+  grid-template-columns: repeat(18, 1fr);
+  /* grid-template-rows: repeat(8, 2vh); */
+  grid-template-rows: repeat(8, 1fr);
+  place-items: normal;
+}
+
+.skills_div{
+  display: grid; 
+  grid-row: 9/36;
+  grid-column: 1/19;
+  background-color: white;
+  color: white;
+  font: 18px "Lucida Grande", "Lucida Sans Unicode", Arial, Helvetica, Verdana, sans-serif;
+  /* overflow: hidden; */
+  width: 100%;
+  /* height: 64vh; */
+  border-radius: 8px;
+  /* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.1); */
+  /* overflow: scroll; */
+  padding: 1%;
+	}
+
+@media only screen and (min-width: 280px) and (max-width: 930px){
+	.finishing_photos_cont, .decks_photos_cont, .stone_carpet_photos_cont{	
+		background-color: green;
+		height:50px;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: flex-start;
+		align-items: flex-start;
+		row-gap: 10px;
+		column-gap: 9vw;
+		/* gap: 1vw; */
+		margin-bottom: 40px;
+		}
+		
+	.finish_photo_div{
+		display: flex;
+		background-color: blue;
+		/*width:100px;*/
+		/*max-height: 100%;
+		max-width: 100%;
+    flex-basis: 42%;*/
+    height: 50px;
+    /* max-width: 26%; */
+    box-shadow: 0px 3px 7px 0px rgba(0,0,0,0.16);
+    font: 14px "Lucida Grande", "Lucida Sans Unicode", Arial, Helvetica, Verdana, sans-serif;
+    border-radius: 5px;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5px;
+	}
+	.finish_img{
+		max-width: 100%;
+		max-height:100%;
+				/*object-fit:contain;*/
+	}
+	.img_modal{
+		display: grid;
+		/*display: none;*/
+		visibility: hidden;
+/*background-color:red;*/
+		border: 1px solid;
+		grid-column: 2/10;
+		grid-row:6/22;
+		/*max-width: 100%;
+		max-height:100%;*/
+
+	}
+	}/*END of @media*/
