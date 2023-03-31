@@ -123,8 +123,7 @@ display: none;
 	.finish_photo_div{
 		display: flex;
 		background-color: blue;
-		grid-row: 9/20;
-		grid-column: 4/19;
+
 		/*width:100px;*/
 		/*max-height: 100%;
 		max-width: 100%;
