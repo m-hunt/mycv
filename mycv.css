@@ -123,6 +123,8 @@ display: none;
 	.finish_photo_div{
 		display: flex;
 		background-color: blue;
+		grid-row: 9/20;
+		grid-column: 4/19;
 		/*width:100px;*/
 		/*max-height: 100%;
 		max-width: 100%;
@@ -137,6 +139,7 @@ display: none;
     align-items: center;
     margin-bottom: 5px;
 	}
+
 	.finish_img{
 		max-width: 100%;
 		max-height:100%;
