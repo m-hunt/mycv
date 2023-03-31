@@ -87,6 +87,8 @@ display: none;
 
 .skills_div{
   display: grid; 
+  grid-template-columns: repeat(18, 1fr);
+  grid-template-rows: repeat(40, 1fr);
   grid-row: 9/36;
   grid-column: 1/19;
   background-color: white;
