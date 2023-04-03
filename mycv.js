@@ -33,11 +33,12 @@ jQuery(document).ready(function (){
 		console.log($(img).width());//this shows a jQuery object
 		var img_id = img[0].id;
 		var cloned_id = "#"+img_id;
+
 		console.log(cloned_id);//shows #cloned_img
 		console.log($(cloned_id).width('50px'));//THIS FUCKING WORKS!!!!!!!!!!!!!!!! So set the its height and/or width to the height/width of the modal
 		console.log($(cloned_id).width());//shows 50px.
 		console.log($('.img_modal').width());//shows a value. So get the width and the height of the modal and then..............FFS, figure it out in the morning.
-		
+		 $(cloned_id).removeClass('finish_img');
 		//$("."+(img[0].className)).height('10%');
 		//console.log($("."+img[0]).className);
 		//console.log($("."+(img[0].className[0])));
