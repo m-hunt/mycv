@@ -19,17 +19,17 @@ jQuery(document).ready(function (){
 	
 	$("#bobo_img").on("click",function(){
 		$('.img_modal').css('visibility', 'visible');
-    var $img_clone = $(this).clone().removeAttr('height width');
+    var $img_clone = $(this).clone().removeAttr('height width');//$img_clone is now the clone of the thumbnail
+		$(".img_modal").append($img_clone[0]);
 		console.log($img_clone);
-		//console.log($(this)[0].className);
 		var img = $img_clone.prop("id","cloned_img");
 		console.log($(img).prop('id'));//shows 'cloned_img'
 		//console.log($img);
-		console.log($(img)[0]); //This shows <img id=bobo_img" src="images/finish.jpg" id="cloned_img"
+		console.log($(img)[0].width()); //This shows <img id="cloned_img" src="images/finish.jpg" style="width: 50px;"> 
 		console.log('#'+$(img)[0]); //shows #[object HTMLImageElement]
 		
 		console.log('#'+$(img)[0]);
-	$(".img_modal").append($(img)[0]);//this appends the image but it's still too long. I want to access the image in modal by a seperate identifier so that I can modify its dimensions
+		//$(".img_modal").append($(img)[0]);//this appends the image but it's still too long. I want to access the image in modal by a seperate identifier so that I can modify its dimensions
 		
 		console.log($(img).width());//this shows a jQuery object
 		var img_id = img[0].id;
