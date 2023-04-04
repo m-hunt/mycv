@@ -19,10 +19,10 @@ jQuery(document).ready(function (){
 	
 	$("#bobo_img").on("click",function(){
 		$('.img_modal').css('visibility', 'visible');
-    var $img = $(this).clone().removeAttr('height width');
-		console.log($img);
+    var $img_clone = $(this).clone().removeAttr('height width');
+		console.log($img_clone);
 		//console.log($(this)[0].className);
-		var img = $img.prop("id","cloned_img");
+		var img = $img_clone.prop("id","cloned_img");
 		console.log($(img).prop('id'));//shows 'cloned_img'
 		//console.log($img);
 		console.log($(img)[0]); //This shows <img id=bobo_img" src="images/finish.jpg" id="cloned_img"
