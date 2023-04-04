@@ -163,6 +163,7 @@ display: none;
     	grid-row: 6/19;
 		grid-template-columns: repeat(18, 1fr);
     	grid-template-rows: repeat(40, 1fr);
+		z-index:10;
 
 /*background-color:red;*/
 		border: 1px solid;
