@@ -1,10 +1,10 @@
 jQuery(document).ready(function (){
 	
-	$("#bobo_img").on('click', function(e){
-		$('.img_modal').css('visibility', 'visible');
-	});
+	//$("#bobo_img").on('click', function(e){
+		//$('.img_modal').css('visibility', 'visible');
+	//});
 	
-	$("#bobo_img").on("click",function(){
+	//$("#bobo_img").on("click",function(){
     //var $img = $("finish_photo_div").children("img").clone();
 		//console.log($img);
 		 //$(".img_modal").append($img);
@@ -14,10 +14,11 @@ jQuery(document).ready(function (){
     //$(".img_modal").append($cloned_img);
 		
 //$('#your_modal_id').clone().prop("id", "new_modal_id").appendTo("target_container");
-});
+//});
 	
 	
-	$("#bobo").on("click",function(){
+	$("#bobo_img").on("click",function(){
+		$('.img_modal').css('visibility', 'visible');
     var $img = $(this).clone();
 		console.log($img);
 		//console.log($(this)[0].className);
