@@ -19,7 +19,7 @@ jQuery(document).ready(function (){
 	
 	$("#bobo_img").on("click",function(){
 		$('.img_modal').css('visibility', 'visible');
-    var $img = $(this).clone().attr('style', '');
+    var $img = $(this).clone().removeAttr('style');
 		console.log($img);
 		//console.log($(this)[0].className);
 		var img = $img.prop("id","cloned_img");
