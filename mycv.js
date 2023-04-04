@@ -1,10 +1,10 @@
 jQuery(document).ready(function (){
 	
-	$(".finish_img").on('click', function(e){
+	$("#bobo_img").on('click', function(e){
 		$('.img_modal').css('visibility', 'visible');
 	});
 	
-	$(".finish_img").on("click",function(){
+	$("#bobo_img").on("click",function(){
     //var $img = $("finish_photo_div").children("img").clone();
 		//console.log($img);
 		 //$(".img_modal").append($img);
@@ -20,11 +20,11 @@ jQuery(document).ready(function (){
 	$("#bobo").on("click",function(){
     var $img = $(this).clone();
 		console.log($img);
-		console.log($(this)[0].className);
+		//console.log($(this)[0].className);
 		var img = $img.prop("id","cloned_img");
 		console.log($(img).prop('id'));//shows 'cloned_img'
 		//console.log($img);
-		console.log($(img)[0]); //This shows <img class="finish_img" src="images/finish.jpg" id="cloned_img"
+		console.log($(img)[0]); //This shows <img id=bobo_img" src="images/finish.jpg" id="cloned_img"
 		console.log('#'+$(img)[0]); //shows #[object HTMLImageElement]
 		
 		console.log('#'+$(img)[0]);
@@ -38,7 +38,7 @@ jQuery(document).ready(function (){
 		console.log($(cloned_id).width('50px'));//THIS FUCKING WORKS!!!!!!!!!!!!!!!! So set the its height and/or width to the height/width of the modal
 		console.log($(cloned_id).width());//shows 50px.
 		console.log($('.img_modal').width());//shows a value. So get the width and the height of the modal and then..............FFS, figure it out in the morning.
-		 $(cloned_id).removeClass('finish_img');
+		// $(cloned_id).removeClass('finish_img');
 		//$("."+(img[0].className)).height('10%');
 		//console.log($("."+img[0]).className);
 		//console.log($("."+(img[0].className[0])));
