@@ -45,6 +45,10 @@ jQuery(document).ready(function (){
 		//console.log($("."+(img[0].className[0])));
     //$(".img_modal").append(img[0]);
 });
+
+$("#cloned_img").on("click",function(){
+	$(this).remove();
+});
 	
 	
 	
