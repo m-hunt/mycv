@@ -25,7 +25,7 @@ jQuery(document).ready(function (){
 		var img = $img_clone.prop("id","cloned_img");
 		console.log($(img).prop('id'));//shows 'cloned_img'
 		//console.log($img);
-		console.log($(img)[0].width()); //This shows <img id="cloned_img" src="images/finish.jpg" style="width: 50px;"> 
+		//console.log($(img)[0].width()); //This shows <img id="cloned_img" src="images/finish.jpg" style="width: 50px;"> 
 		console.log('#'+$(img)[0]); //shows #[object HTMLImageElement]
 		
 		console.log('#'+$(img)[0]);
